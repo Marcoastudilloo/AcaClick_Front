@@ -814,3 +814,77 @@ a {
     max-height: 250px; /* Aún más pequeña en móviles */
   }
 }
+
+
+/* Soluciones que Ofrecemos */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  object-fit: contain;
+  max-height: 180px;
+}
+
+.card h5 {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #6a1b9a;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ¿A quién va dirigido? */
+.card.border-0.shadow-sm {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card.border-0 .fa-briefcase {
+  color: #ff9800;
+}
+
+.card.border-0 h5 {
+  color: #7b1fa2;
+}
+/* Contenedor general */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* Video */
+.text-center video {
+  max-width: 600px; /* antes 800px */
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
